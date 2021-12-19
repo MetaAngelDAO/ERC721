@@ -101,6 +101,10 @@ contract MetaAngelDAO is ERC721Enumerable, Pausable, Ownable  {
     {
         super._beforeTokenTransfer(from, to, tokenId);
     }
+    
+    function setMintCost(uint256 _newCost) public onlyOwner {
+        cost = _newCost;
+    }
 
 
 }
