@@ -16,7 +16,7 @@ contract MetaAngelDAO is ERC721Enumerable, Pausable, Ownable  {
     uint256 private _currentTokenId = 200;
     uint256 public maxSupply = 2888;
     uint256 public maxMintAmount = 2;
-    uint256 public maxPerWallet = 99;
+    uint256 public maxPerWallet = 2;
     uint256 public cost = 1.0 ether;
     string baseURI;
 
